@@ -1,0 +1,27 @@
+.sign-in-box {
+    width: 65vh;
+    margin: 0 auto;
+    padding: 3vh;
+    border: 1px solid darkgrey;
+    border-radius: 15px;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+
+.search-btn{
+    color: grey;
+    cursor: pointer;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
