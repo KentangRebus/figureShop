@@ -22,3 +22,11 @@ Route::get('/Login', function () {
 Route::get('/Register', function () {
     return view('register');
 });
+
+Route::get('/Detail', function () {
+    return view('detail');
+});
+
+Route::get('/Cart', function () {
+    return view('detail');
+});
