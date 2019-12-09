@@ -34,11 +34,11 @@
         </nav>
     </header>
 
-    <main>
+    <main class="content">
         @yield('content')
     </main>
 
-    <footer class="text-white bg-dark py-3">
+    <footer class="text-white bg-dark py-3 footer">
         <div class="text-center">
             &#9400; 2019 Copyright by Bluejack
         </div>

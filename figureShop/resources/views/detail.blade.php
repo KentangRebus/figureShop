@@ -40,7 +40,9 @@
                 <hr>
                 <div>
                     <p>
-                        Figure Description Here! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid blanditiis consequatur doloremque dolores eaque illum incidunt ipsam laboriosam rem sed similique, soluta voluptates? Debitis dolorem exercitationem incidunt molestiae voluptates?
+                        Figure Description Here!
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid blanditiis consequatur doloremque dolores eaque illum incidunt ipsam laboriosam rem sed similique, soluta voluptates? Debitis dolorem exercitationem incidunt molestiae voluptates?
                     </p>
                 </div>
 

@@ -28,5 +28,5 @@ Route::get('/Detail', function () {
 });
 
 Route::get('/Cart', function () {
-    return view('detail');
+    return view('cart');
 });
