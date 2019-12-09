@@ -30,3 +30,11 @@ Route::get('/Detail', function () {
 Route::get('/Cart', function () {
     return view('cart');
 });
+
+Route::get('Admin/Figure', function () {
+    return view('admin.figure');
+});
+
+Route::get('Admin/Figure/Insert', function () {
+    return view('admin.figureInsert');
+});
