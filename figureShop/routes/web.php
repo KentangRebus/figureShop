@@ -38,3 +38,12 @@ Route::get('Admin/Figure', function () {
 Route::get('Admin/Figure/Insert', function () {
     return view('admin.figureInsert');
 });
+
+//Routes untuk melakukan registrasi
+Route::get('/Register', function () {
+    return view('register');
+});
+Route::post('/doRegister', 'AuthController@store');
+Route::post('/doLogin','AuthController@login');
+
+//Route::get('/home', 'HomeController@index')->name('home');
