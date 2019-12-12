@@ -19,6 +19,17 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-block">Insert New Feedback</button>
+                @if ($errors->any())
+                    <div class="form-group text-danger mt-3">
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
             </form>
         </div>
     </div>

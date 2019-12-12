@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Feedback;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class FeedbackController extends Controller
 {
@@ -52,10 +53,19 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        $feed = new Feedback();
-        $feed->description = $request->description;
-        $feed->status = 'pending';
-        $feed->save();
+        $validator = Validator::make($request->all(), [
+            'description' => 'bail|required|min:10',
+        ]);
+
+        if(!$validator->fails()) {
+            $feed = new Feedback();
+            $feed->description = $request->description;
+            $feed->status = 'pending';
+            $feed->save();
+        }
+        else{
+            return redirect("Feedback")->withErrors($validator->errors());
+        }
 
         return redirect('/');
     }
