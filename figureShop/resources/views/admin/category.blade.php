@@ -37,7 +37,7 @@
                             </button>
                         </td>
                     </tr>
-                @endfor
+                    @endfor
                 </tbody>
             </table>
         </div>

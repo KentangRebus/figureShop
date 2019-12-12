@@ -77,6 +77,9 @@ Route::get('Admin/User/Update', function () {
     return view('admin.userUpdate');
 });
 
+Route::get('Admin/Transaction', function () {
+    return view('transactionHistory');
+});
 
 Route::get('Profile', function () {
     return view('profile');

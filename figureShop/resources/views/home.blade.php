@@ -5,14 +5,22 @@
 @endsection
 
 @section('js')
+    <script>
+        let datePlaceHolder = document.getElementById('datePlaceHolder');
 
+        setInterval(function(){
+            let date = new Date();
+            datePlaceHolder.innerHTML = date;
+        }, 900)
+
+    </script>
 @endsection
 
 @section('content')
     <div class="w-85 m-auto d-flex">
         <div class="d-flex flex-column my-4 w-35">
             <h5>Welcome, Guest</h5>
-            <h6>Current date: </h6>
+            <h6>Current date: <span id="datePlaceHolder"></span> </h6>
             <form action="">
                 <div class="form-group d-flex">
                     <input type="text" class="form-control w-80" id="searchInput" placeholder="Search">
