@@ -54,3 +54,13 @@ Route::get('Admin/Category/Insert', function () {
 Route::get('Admin/Category/Update ', function () {
     return view('admin.categoryUpdate');
 });
+
+Route::get('Admin/Feedback', function () {
+    return view('admin.feedback');
+});
+
+Route::get('Profile', function () {
+    return view('profile');
+});
+
+
