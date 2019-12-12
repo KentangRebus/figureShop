@@ -38,3 +38,19 @@ Route::get('Admin/Figure', function () {
 Route::get('Admin/Figure/Insert', function () {
     return view('admin.figureInsert');
 });
+
+Route::get('Admin/Figure/Update ', function () {
+    return view('admin.figureUpdate');
+});
+
+Route::get('Admin/Category', function () {
+    return view('admin.category');
+});
+
+Route::get('Admin/Category/Insert', function () {
+    return view('admin.categoryInsert');
+});
+
+Route::get('Admin/Category/Update ', function () {
+    return view('admin.categoryUpdate');
+});
