@@ -43,3 +43,9 @@
     height: 27vh;
     object-fit: cover;
 }
+
+.user-image {
+    width: 15vh;
+    height: 15vh;
+    object-fit: cover;
+}

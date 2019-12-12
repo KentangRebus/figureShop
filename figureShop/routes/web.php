@@ -59,6 +59,10 @@ Route::get('Admin/Feedback', function () {
     return view('admin.feedback');
 });
 
+Route::get('Admin/User', function () {
+    return view('admin.user');
+});
+
 Route::get('Profile', function () {
     return view('profile');
 });
