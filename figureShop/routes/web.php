@@ -80,4 +80,4 @@ Route::get('Profile', function () {
 Route::get('Feedback', function () {
     return view('feedback');
 });
-
+Route::POST('Feedback/doInsert', 'FeedbackController@store');

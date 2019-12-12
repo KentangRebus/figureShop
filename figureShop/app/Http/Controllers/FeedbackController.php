@@ -52,7 +52,12 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $feed = new Feedback();
+        $feed->description = $request->description;
+        $feed->status = 'pending';
+        $feed->save();
+
+        return redirect('/');
     }
 
     /**
