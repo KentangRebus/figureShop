@@ -85,4 +85,7 @@ Route::get('Profile', function () {
     return view('profile');
 });
 
+Route::get('Feedback', function () {
+    return view('feedback');
+});
 
