@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfacbe48-5016-46d8-b217-65a814aa63bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_134632_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_134632_create_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135638_create_figure_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135638_create_figure_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135757_create_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135757_create_category_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135834_create_feedback_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135834_create_feedback_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135949_create_header_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135949_create_header_transaction_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_140039_create_detail_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_140039_create_detail_transaction_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/FigureSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/FigureSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="dfacbe48-5016-46d8-b217-65a814aa63bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +163,14 @@
       <workItem from="1576063524067" duration="775000" />
       <workItem from="1576124257845" duration="2303000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php">
+      <created>1576152501488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576152501488</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,9 +189,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge https://github.com/KentangRebus/figureShop&#10;&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/KentangRebus/figureShop&#10;&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
+    <MESSAGE value="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1576152500832">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576152500832" />
+    <state x="129" y="54" key="MergeDialog" timestamp="1576152631344">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152631344" />
+    <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1576152637292">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152637292" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1576152315060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -211,10 +214,10 @@
     </state>
     <state x="384" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576124262157" />
     <state x="540" y="267" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1576063525766" />
-    <state x="390" y="155" key="git4idea.merge.GitPullDialog" timestamp="1576152420443">
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog" timestamp="1576152516203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152420443" />
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152516203" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1576124901230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
