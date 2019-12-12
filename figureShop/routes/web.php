@@ -54,7 +54,7 @@ Route::get('Admin/Category/Insert', function () {
 });
 Route::post('Admin/Category/doInsert', 'CategoryController@store');
 Route::post('Admin/Category/doDelete/{id}', 'CategoryController@destroy');
-Route::post('Admin/Category/Update/{id}', 'CategoryController@updatePage');
+Route::get('Admin/Category/Update/{id}', 'CategoryController@updatePage');
 Route::post('Admin/Category/doUpdate/{id}', 'CategoryController@update');
 
 Route::get('Admin/Feedback', function () {

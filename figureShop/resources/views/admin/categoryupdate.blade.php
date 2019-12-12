@@ -18,6 +18,17 @@
                     <input type="text" class="form-control" name="name" placeholder="Category Name" value="{{$data->name}}" required>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block" onclick="">Update</button>
+                @if ($errors->any())
+                    <div class="form-group text-danger mt-3">
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
             </form>
         </div>
     </div>

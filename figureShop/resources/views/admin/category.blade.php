@@ -29,7 +29,7 @@
                     <tr>
                         <td>{{$d->name}}</td>
                         <td>
-                            <form action="/Admin/Category/Update/{{$d->id}}" method="POST">
+                            <form action="/Admin/Category/Update/{{$d->id}}" method="GET">
                                 {{csrf_field()}}
                                 <button type="submit" class="btn btn-primary" onclick="">
                                     <i class="fas fa-edit"></i>

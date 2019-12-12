@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
@@ -37,10 +38,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = new category();
-        $category->name = $request->name;
-        $category->save();
+        $validator = Validator::make($request->all(), [
+            'name' => 'bail|required|min:5',
+        ]);
 
+        if(!$validator->fails()) {
+            $category = new category();
+            $category->name = $request->name;
+            $category->save();
+        }
+        else{
+            return redirect('Admin/Category/Insert')->withErrors($validator->errors());
+        }
 //        $data = category::all();
 //        return view('admin.category')->with('data', $data);
         return redirect('/Admin/Category');
@@ -77,10 +86,18 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category = category::find($id);
-        $category->name = $request->name;
-        $category->save();
+        $validator = Validator::make($request->all(), [
+            'name' => 'bail|required|min:5',
+        ]);
 
+        if(!$validator->fails()) {
+            $category = category::find($id);
+            $category->name = $request->name;
+            $category->save();
+        }
+        else{
+            return redirect("Admin/Category/Update/$id")->withErrors($validator->errors());
+        }
         return redirect('/Admin/Category');
     }
 
