@@ -49,7 +49,7 @@
                     @endif
                     @if(!empty(auth()->user()) && auth()->user()->role === 'Admin')
                         <li class="nav-item">
-                            <a class="nav-link" href="">Feedback</a>
+                            <a class="nav-link" href="/Admin/Feedback">Manage Feedback</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Manage User</a>

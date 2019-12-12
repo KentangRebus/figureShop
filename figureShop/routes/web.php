@@ -57,9 +57,9 @@ Route::post('Admin/Category/doDelete/{id}', 'CategoryController@destroy');
 Route::get('Admin/Category/Update/{id}', 'CategoryController@updatePage');
 Route::post('Admin/Category/doUpdate/{id}', 'CategoryController@update');
 
-Route::get('Admin/Feedback', function () {
-    return view('admin.feedback');
-});
+Route::get('Admin/Feedback', 'FeedbackController@index');
+Route::POST('Admin/Feedback/Approve/{id}', 'FeedbackController@approve');
+Route::POST('Admin/Feedback/Reject/{id}', 'FeedbackController@reject');
 
 Route::get('Admin/User', function () {
     return view('admin.user');

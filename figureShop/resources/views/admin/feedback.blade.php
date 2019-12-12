@@ -23,22 +23,28 @@
                 </tr>
                 </thead>
                 <tbody>
-                @for($i = 0 ; $i < 3 ; $i ++)
+                @foreach($data as $d)
                     <tr>
-                        <td>Feedback Here!</td>
-                        <td>Status Here!</td>
+                        <td>{{$d->description}}</td>
+                        <td>{{$d->status}}</td>
                         <td>
-                            <button type="button" class="btn btn-primary" onclick="">
-                                <i class="fas fa-check"></i>
-                            </button>
+                            <form action="/Admin/Feedback/Approve/{{$d->id}}" method="POST">
+                                {{csrf_field()}}
+                                <button type="submit" class="btn btn-primary" onclick="">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                            </form>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" onclick="">
-                                <i class="fas fa-times"></i>
-                            </button>
+                            <form action="/Admin/Feedback/Reject/{{$d->id}}" method="POST">
+                                {{csrf_field()}}
+                                <button type="submit" class="btn btn-danger" onclick="">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </form>
                         </td>
                     </tr>
-                @endfor
+                @endforeach
                 </tbody>
             </table>
         </div>
