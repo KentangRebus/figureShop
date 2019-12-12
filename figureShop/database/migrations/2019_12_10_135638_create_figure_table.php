@@ -13,14 +13,14 @@ class CreateFigureTable extends Migration
      */
     public function up()
     {
-        Schema::create('figure', function (Blueprint $table) {
-            $table->increments('figureId');
-            $table->string('categoryId');
-            $table->string('figureName');
-            $table->string('figureDescription');
-            $table->string('figureQuantity');
-            $table->string('figurePrice');
-            $table->string('figurePicture');
+        Schema::create('figures', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('categoryId');
+            $table->string('name');
+            $table->string('description');
+            $table->string('quantity');
+            $table->string('price');
+            $table->string('picture');
         });
     }
 

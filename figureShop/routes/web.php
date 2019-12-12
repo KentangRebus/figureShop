@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/Login', function () {
     return view('login');
@@ -23,9 +21,7 @@ Route::get('/Register', function () {
     return view('register');
 });
 
-Route::get('/Detail', function () {
-    return view('detail');
-});
+Route::get('/Detail/{id}', 'DetailController@index');
 
 Route::get('/Cart', function () {
     return view('cart');
@@ -45,9 +41,8 @@ Route::get('/Register', function () {
 });
 Route::post('/doRegister', 'AuthController@store');
 Route::post('/doLogin','AuthController@login');
-
-//Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/doLogout','AuthController@logout');
+Route::post('/addToCart','CartController@store');
 
 Route::get('Admin/Figure/Update ', function () {
     return view('admin.figureUpdate');

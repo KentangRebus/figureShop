@@ -13,11 +13,11 @@ class CreateFeedbackTable extends Migration
      */
     public function up()
     {
-        Schema::create('feedback', function (Blueprint $table) {
-            $table->increments('feedbackId');
-            $table->string('userId');
-            $table->string('feedbackDescription');
-            $table->string('feedbackStatus');
+        Schema::create('feedbacks', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('description');
+            $table->string('status');
         });
     }
 

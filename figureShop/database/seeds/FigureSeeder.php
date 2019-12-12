@@ -11,40 +11,40 @@ class FigureSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('figure')->insert([
+        DB::table('figures')->insert([
             'categoryId' => '1',
-            'figureName' => 'Pikachu',
-            'figureDescription' => 'Mouse electric pokemon, strong and agile',
-            'figureQuantity' => '41',
-            'figurePrice' => '50000',
-            'figurePicture' => ''
+            'name' => 'Pikachu',
+            'description' => 'Mouse electric pokemon, strong and agile',
+            'quantity' => '41',
+            'price' => '50000',
+            'picture' => 'pikachu_figure.jpg'
         ]);
 
-        DB::table('figure')->insert([
+        DB::table('figures')->insert([
             'categoryId' => '1',
-            'figureName' => 'Squirtle',
-            'figureDescription' => 'Turtle water pokemon, have a nice defense and kind to the others',
-            'figureQuantity' => '12',
-            'figurePrice' => '30000',
-            'figurePicture' => ''
+            'name' => 'Squirtle',
+            'description' => 'Turtle water pokemon, have a nice defense and kind to the others',
+            'quantity' => '12',
+            'price' => '30000',
+            'picture' => 'squirtle_figure.jpg'
         ]);
 
-        DB::table('figure')->insert([
+        DB::table('figures')->insert([
             'categoryId' => '2',
-            'figureName' => 'Naruto',
-            'figureDescription' => 'Strongest hokage alive with the power of kyubi',
-            'figureQuantity' => '53',
-            'figurePrice' => '20000',
-            'figurePicture' => ''
+            'name' => 'Naruto',
+            'description' => 'Strongest hokage alive with the power of kyubi',
+            'quantity' => '53',
+            'price' => '20000',
+            'picture' => 'naruto_figure.jpg'
         ]);
 
-        DB::table('figure')->insert([
+        DB::table('figures')->insert([
             'categoryId' => '2',
-            'figureName' => 'Sasuke',
-            'figureDescription' => 'His rival is naruto and he is the strongest uchiha ever',
-            'figureQuantity' => '32',
-            'figurePrice' => '60000',
-            'figurePicture' => ''
+            'name' => 'Sasuke',
+            'description' => 'His rival is naruto and he is the strongest uchiha ever',
+            'quantity' => '32',
+            'price' => '60000',
+            'picture' => 'sasuke_figure.jpg'
         ]);
     }
 }

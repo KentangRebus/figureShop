@@ -14,10 +14,10 @@ class CreateHeaderTransactionTable extends Migration
     public function up()
     {
         Schema::create('header_transaction', function (Blueprint $table) {
-            $table->increments('transactionId');
-            $table->string('userId');
-            $table->string('transactionDate');
-            $table->string('transactionStatus');
+            $table->increments('id');
+            $table->integer('userId');
+            $table->date('date');
+            $table->string('status');
         });
     }
 

@@ -16,33 +16,31 @@
 
 @section('content')
     <div class="pt-3 pb-5">
-        <h4 class="mb-4 w-75 m-auto" >Figure Title Here!</h4>
+        <h4 class="mb-4 w-75 m-auto" >{{$data->name}}</h4>
         <div class="w-75 m-auto d-flex pt-4">
             <div>
-                <img src="{{asset('assets/placeholder.jpg')}}" alt="" class="border images">
+                <img src="{{asset('storage/'.$data->picture)}}" alt="" class="border images">
             </div>
             <div class="pl-5">
                 <div>
                     <h6>
-                        Category: Category Here!
+                        Category: {{$data->category->name}}
                     </h6>
                 </div>
                 <div>
                     <h6>
-                        Quantity: 99
+                        Quantity: {{$data->quantity}}
                     </h6>
                 </div>
                 <div>
                     <h6>
-                        Price: Rp. 9999999
+                        Price: Rp.{{$data->price}}
                     </h6>
                 </div>
                 <hr>
                 <div>
                     <p>
-                        Figure Description Here!
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid blanditiis consequatur doloremque dolores eaque illum incidunt ipsam laboriosam rem sed similique, soluta voluptates? Debitis dolorem exercitationem incidunt molestiae voluptates?
+                        {{$data->description}}
                     </p>
                 </div>
 

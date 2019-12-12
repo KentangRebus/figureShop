@@ -39,7 +39,7 @@ class AuthController extends Controller
     {
         $this->validate($request, [
             'FullName' => 'bail|required|min:5',
-            'Email' => 'bail|required|email|unique:user,email',
+            'Email' => 'bail|required|email|unique:users,email',
             'Password' => 'bail|required|alpha_num|min:5',
             'ConfirmPassword' => 'bail|required|same:Password',
             'Phone' => 'bail|required|numeric|digits:11',
@@ -49,6 +49,11 @@ class AuthController extends Controller
             'Agreement' => 'bail|required'
         ]);
 
+        $image = $request->file('profile_picture');
+        $imagename = time().'.'.$image->getClientOriginalName();
+        $dest = 'assets';
+        $image->storeAs($dest,$imagename);
+
         $user = new User();
         $user->name = $request->FullName;
         $user->email = $request->Email;
@@ -56,10 +61,15 @@ class AuthController extends Controller
         $user->phone = $request->Phone;
         $user->address = $request->Address;
         $user->gender = $request->Gender;
-        $user->picture = $request->profile_picture;
+        $user->picture = $imagename;
         $user->role = 'Member';
         $user->save();
         return redirect('Login')->with('alert-success','Register Success');
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('Login')->with('alert-success','Logout Success');
     }
 
     public function login(Request $request){

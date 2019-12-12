@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\category;
+use App\Figure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -13,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
@@ -21,8 +24,21 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $user = Auth::user();
+        $query = $request->search;
+        $figures = Figure::with('category')
+            ->where('name', 'LIKE', '%' . $query . '%')
+            ->paginate(2);
+//        dd($figures);
+//        if($figures->total==0){
+//            $category = category::where('name','LIKE','%'.$query.'%')->get();
+//            $figures = Figure::with('category')
+//                ->where('categoryId','=',$category[0]->id)
+//                ->paginate(2);
+//        }
+        $figures->appends($request->only('search'));
+        return view('home',compact('figures','user'));
     }
 }

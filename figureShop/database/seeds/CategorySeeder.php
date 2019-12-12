@@ -11,12 +11,12 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('category')->insert([
-            'categoryName' => 'Pokemon'
+        DB::table('categories')->insert([
+            'name' => 'Pokemon'
         ]);
 
-        DB::table('category')->insert([
-            'categoryName' => 'Naruto'
+        DB::table('categories')->insert([
+            'name' => 'Naruto'
         ]);
     }
 }
