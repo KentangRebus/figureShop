@@ -63,6 +63,11 @@ Route::get('Admin/User', function () {
     return view('admin.user');
 });
 
+Route::get('Admin/User/Update', function () {
+    return view('admin.userUpdate');
+});
+
+
 Route::get('Profile', function () {
     return view('profile');
 });
