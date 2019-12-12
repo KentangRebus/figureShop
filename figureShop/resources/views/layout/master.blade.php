@@ -22,13 +22,54 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     {{-- if not login show this menu --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Register">Register</a>
-                    </li>
-
+                    @if(auth()->user() == null || empty(auth()->user()))
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Register">Register</a>
+                        </li>
+                    @endif
+                    @if(!empty(auth()->user()) && auth()->user()->role === 'Member')
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">My Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">My Transaction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Logout</a>
+                        </li>
+                    @endif
+                    @if(!empty(auth()->user()) && auth()->user()->role === 'Admin')
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Manage User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Manage Figure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Manage Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Transaction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Logout</a>
+                        </li>
+                    @endif
                 </ul>
             </div>
         </nav>

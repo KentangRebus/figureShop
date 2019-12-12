@@ -5,7 +5,15 @@
 @endsection
 
 @section('js')
+    <script>
+        let datePlaceHolder = document.getElementById('datePlaceHolder');
 
+        setInterval(function(){
+            let date = new Date();
+            datePlaceHolder.innerHTML = date;
+        }, 900)
+
+    </script>
 @endsection
 
 @section('content')
