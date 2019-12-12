@@ -48,17 +48,14 @@ Route::get('Admin/Figure/Update ', function () {
     return view('admin.figureUpdate');
 });
 
-Route::get('Admin/Category', function () {
-    return view('admin.category');
-});
-
+Route::get('Admin/Category', 'CategoryController@index');
 Route::get('Admin/Category/Insert', function () {
     return view('admin.categoryInsert');
 });
-
-Route::get('Admin/Category/Update ', function () {
-    return view('admin.categoryUpdate');
-});
+Route::post('Admin/Category/doInsert', 'CategoryController@store');
+Route::post('Admin/Category/doDelete/{id}', 'CategoryController@destroy');
+Route::post('Admin/Category/Update/{id}', 'CategoryController@updatePage');
+Route::post('Admin/Category/doUpdate/{id}', 'CategoryController@update');
 
 Route::get('Admin/Feedback', function () {
     return view('admin.feedback');

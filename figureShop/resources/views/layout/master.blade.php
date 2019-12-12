@@ -58,7 +58,7 @@
                             <a class="nav-link" href="">Manage Figure</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Manage Category</a>
+                            <a class="nav-link" href="/Admin/Category">Manage Category</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Transaction</a>

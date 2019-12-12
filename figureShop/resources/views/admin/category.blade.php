@@ -12,7 +12,9 @@
     <div class="mt-4">
         <div class="w-75 m-auto mt-5">
             <h4 class="mb-4">Manage Category</h4>
-            <button type="button" class="btn btn-primary">Insert New Category</button>
+            <a href="/Admin/Category/Insert">
+                <button type="button" class="btn btn-primary">Insert New Category</button>
+            </a>
 
             <table class="table table-striped mt-4">
                 <thead>
@@ -23,21 +25,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                @for($i = 0 ; $i < 3 ; $i ++)
+                @foreach($data as $d)
                     <tr>
-                        <td>Category Name</td>
+                        <td>{{$d->name}}</td>
                         <td>
-                            <button type="button" class="btn btn-primary" onclick="">
-                                <i class="fas fa-edit"></i>
-                            </button>
+                            <form action="/Admin/Category/Update/{{$d->id}}" method="POST">
+                                {{csrf_field()}}
+                                <button type="submit" class="btn btn-primary" onclick="">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                            </form>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" onclick="">
-                                <i class="fas fa-trash-alt"></i>
-                            </button>
+                            <form action="/Admin/Category/doDelete/{{$d->id}}" method="POST">
+                                {{csrf_field()}}
+                                <button type="submit" class="btn btn-danger" onclick="">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </form>
                         </td>
                     </tr>
-                    @endfor
+                    @endforeach
                 </tbody>
             </table>
         </div>

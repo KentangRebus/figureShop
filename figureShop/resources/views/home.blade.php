@@ -24,11 +24,11 @@
             @else
                 <h5>Welcome, Guest</h5>
             @endif
-            <h6>Current date: </h6>
+            <h6>Current date: <span id="datePlaceHolder"></span></h6>
             <form action="{{url('/')}}" method="get">
                 <div class="form-group d-flex">
-                    <input type="text" class="form-control w-80" id="searchInput" placeholder="Search" name="search">
-                    <button type="submit">
+                    <input type="text" class="form-control w-75" id="searchInput" placeholder="Search" name="search">
+                    <button class="btn btn-link" type="submit">
                         <i class="fas fa-search fa-lg align-self-center ml-2 search-btn" onclick="" ></i>
                     </button>
                 </div>
@@ -55,27 +55,7 @@
                 </div>
                 </form>
             @endforeach
-
-            {{--  Pagination over here! --}}
-            {{ $figures->links() }}
-{{--            <nav class="m-auto">--}}
-{{--                <ul class="pagination">--}}
-{{--                    <li class="page-item">--}}
-{{--                        <a class="page-link" href="#" aria-label="Previous">--}}
-{{--                            <span aria-hidden="true">&laquo;</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="page-item"><a class="page-link" href="#">1</a></li>--}}
-{{--                    <li class="page-item"><a class="page-link" href="#">2</a></li>--}}
-{{--                    <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
-{{--                    <li class="page-item">--}}
-{{--                        <a class="page-link" href="#" aria-label="Next">--}}
-{{--                            <span aria-hidden="true">&raquo;</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </nav>--}}
-
         </div>
+        {{ $figures->links() }}
     </div>
 @endsection
