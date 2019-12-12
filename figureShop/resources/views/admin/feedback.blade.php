@@ -9,31 +9,32 @@
 @endsection
 
 @section('content')
-    <div class="mt-4">
+    <div class="mt-5">
         <div class="w-75 m-auto mt-5">
-            <h4 class="mb-4">Manage Category</h4>
-            <button type="button" class="btn btn-primary">Insert New Category</button>
+            <h4 class="mb-4">Manage Feedback</h4>
 
-            <table class="table table-striped mt-4">
+            <table class="table table-striped mt-5">
                 <thead>
-                    <tr>
-                        <th scope="col">Category Name</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-                    </tr>
+                <tr>
+                    <th scope="col">Feedback Description</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Approve</th>
+                    <th scope="col">Reject</th>
+                </tr>
                 </thead>
                 <tbody>
                 @for($i = 0 ; $i < 3 ; $i ++)
                     <tr>
-                        <td>Category Name</td>
+                        <td>Feedback Here!</td>
+                        <td>Status Here!</td>
                         <td>
                             <button type="button" class="btn btn-primary" onclick="">
-                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-check"></i>
                             </button>
                         </td>
                         <td>
                             <button type="button" class="btn btn-danger" onclick="">
-                                <i class="fas fa-trash-alt"></i>
+                                <i class="fas fa-times"></i>
                             </button>
                         </td>
                     </tr>

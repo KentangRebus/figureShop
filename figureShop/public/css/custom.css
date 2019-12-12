@@ -1,4 +1,5 @@
 .content {
+    min-height: 70vh;
     padding-bottom: 100px;
 }
 .sign-in-box {
@@ -40,5 +41,11 @@
 .cart-image {
     width: 20vh;
     height: 27vh;
+    object-fit: cover;
+}
+
+.user-image {
+    width: 15vh;
+    height: 15vh;
     object-fit: cover;
 }

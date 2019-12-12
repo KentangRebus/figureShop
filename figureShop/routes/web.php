@@ -47,3 +47,39 @@ Route::post('/doRegister', 'AuthController@store');
 Route::post('/doLogin','AuthController@login');
 
 //Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('Admin/Figure/Update ', function () {
+    return view('admin.figureUpdate');
+});
+
+Route::get('Admin/Category', function () {
+    return view('admin.category');
+});
+
+Route::get('Admin/Category/Insert', function () {
+    return view('admin.categoryInsert');
+});
+
+Route::get('Admin/Category/Update ', function () {
+    return view('admin.categoryUpdate');
+});
+
+Route::get('Admin/Feedback', function () {
+    return view('admin.feedback');
+});
+
+Route::get('Admin/User', function () {
+    return view('admin.user');
+});
+
+Route::get('Admin/User/Update', function () {
+    return view('admin.userUpdate');
+});
+
+
+Route::get('Profile', function () {
+    return view('profile');
+});
+
+
