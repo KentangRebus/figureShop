@@ -6,6 +6,8 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -37,38 +39,44 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
             'FullName' => 'bail|required|min:5',
             'Email' => 'bail|required|email|unique:users,email',
             'Password' => 'bail|required|alpha_num|min:5',
             'ConfirmPassword' => 'bail|required|same:Password',
-            'Phone' => 'bail|required|numeric|digits:11',
+            'Phone' => 'bail|required|numeric|digits_between:11,13',
             'Address' => 'bail|required|min:10',
             'Gender' => 'bail|required|not_in:Gender',
-            'profile_picture' => 'bail|required|mimes:jpeg,bmp,png',
+            'profile_picture' => 'bail|required|mimes:jpeg,jpg,png',
             'Agreement' => 'bail|required'
         ]);
+        if(!$validator->fails()){
+            $image = $request->file('profile_picture');
+            $imagename = time().'.'.$image->getClientOriginalName();
+            $dest = 'public';
+            $image->storeAs($dest,$imagename);
 
-        $image = $request->file('profile_picture');
-        $imagename = time().'.'.$image->getClientOriginalName();
-        $dest = 'assets';
-        $image->storeAs($dest,$imagename);
+            $user = new User();
+            $user->name = $request->FullName;
+            $user->email = $request->Email;
+            $user->password = bcrypt($request->Password);
+            $user->phone = $request->Phone;
+            $user->address = $request->Address;
+            $user->gender = $request->Gender;
+            $user->picture = $imagename;
+            $user->role = 'Member';
+            $user->save();
+            return redirect('Login')->with('alert-success','Register Success');
+        }
+        else{
+            return redirect('Login')->withErrors($validator->errors());
+        }
 
-        $user = new User();
-        $user->name = $request->FullName;
-        $user->email = $request->Email;
-        $user->password = bcrypt($request->Password);
-        $user->phone = $request->Phone;
-        $user->address = $request->Address;
-        $user->gender = $request->Gender;
-        $user->picture = $imagename;
-        $user->role = 'Member';
-        $user->save();
-        return redirect('Login')->with('alert-success','Register Success');
     }
 
     public function logout(){
         Auth::logout();
+        Session::flush();
         return redirect('Login')->with('alert-success','Logout Success');
     }
 

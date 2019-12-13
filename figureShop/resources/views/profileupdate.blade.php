@@ -11,7 +11,7 @@
 @section('content')
     <div>
         <div class="sign-in-box shadow-sm my-5">
-            <h3 class="text-center pb-2">Update User</h3>
+            <h3 class="text-center pb-2">Update Profile</h3>
             <form enctype="multipart/form-data" action="{{ url('Profile/doUpdate/'.$user->id) }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
@@ -32,13 +32,6 @@
                         <option>Gender</option>
                         <option>Male</option>
                         <option>Female</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select class="form-control" id="roleSelection" name="Role">
-                        <option>Role</option>
-                        <option>Admin</option>
-                        <option>Member</option>
                     </select>
                 </div>
                 <div class="form-group">

@@ -23,17 +23,16 @@ Route::get('/Register', function () {
 
 Route::get('/Detail/{id}', 'DetailController@index');
 
-Route::get('/Cart', function () {
-    return view('cart');
-});
+Route::get('/Cart', 'CartController@index');
+Route::get('/Cart/RemoveDetail/{id}', 'CartController@destroyDetail');
 
-Route::get('Admin/Figure', function () {
-    return view('admin.figure');
-});
-
-Route::get('Admin/Figure/Insert', function () {
-    return view('admin.figureInsert');
-});
+//Figure Routes
+Route::get('Admin/Figure', 'FigureController@index');
+Route::get('Admin/Figure/Insert', 'FigureController@gotoInsert');
+Route::post('Figure/doInsert', 'FigureController@store');
+Route::get('Admin/Figure/Update/{id} ', 'FigureController@edit');
+Route::post('Figure/doUpdate/{id} ', 'FigureController@update');
+Route::get('Figure/doDelete/{id} ', 'FigureController@destroy');
 
 //Routes untuk melakukan registrasi
 Route::get('/Register', function () {
@@ -43,10 +42,8 @@ Route::post('/doRegister', 'AuthController@store');
 Route::post('/doLogin','AuthController@login');
 Route::get('/doLogout','AuthController@logout');
 Route::post('/addToCart','CartController@store');
+Route::post('/doCheckout/{cartId}','CartController@checkout');
 
-Route::get('Admin/Figure/Update ', function () {
-    return view('admin.figureUpdate');
-});
 
 Route::get('Admin/Category', function () {
     return view('admin.category');
@@ -64,21 +61,13 @@ Route::get('Admin/Feedback', function () {
     return view('admin.feedback');
 });
 
-Route::get('Admin/User', function () {
-    return view('admin.user');
-});
-
-Route::get('Admin/User/Update', function () {
-    return view('admin.userUpdate');
-});
-
-Route::get('Admin/Transaction', function () {
-    return view('transactionHistory');
-});
-
-Route::get('Profile', function () {
-    return view('profile');
-});
+Route::get('TransactionHistory', 'TransactionController@index');
+Route::get('Profile', 'UserController@indexProfile');
+Route::get('Profile/Update/{id}', 'UserController@indexUpdateProfile');
+Route::get('Admin/User', 'UserController@indexManageUser');
+Route::get('Admin/User/{id}', 'UserController@indexManageUserUpdate');
+Route::post('Profile/doUpdate/{id}', 'UserController@update');
+Route::get('Profile/doDelete/{id} ', 'UserController@destroy');
 
 Route::get('Feedback', function () {
     return view('feedback');

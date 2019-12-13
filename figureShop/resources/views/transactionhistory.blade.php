@@ -12,14 +12,15 @@
     <div class="mt-5">
         <div class="w-75 m-auto">
             <h4 class="mb-4">Transaction History</h4>
+            @foreach($items as $item)
             <div class="my-2">
-                Transaction Date:
+                Transaction Date: {{$item['header']->date}}
             </div>
             <div class="my-2">
-                Transaction Number:
+                Transaction Number: {{$item['header']->id}}
             </div>
             <div class="my-2">
-                Buyer Name:
+                Buyer Name: {{$item['header']->users->name}}
             </div>
             <table class="table table-striped mt-4">
                 <thead>
@@ -32,27 +33,29 @@
                 </tr>
                 </thead>
                 <tbody>
-                @for($i = 0 ; $i < 3 ; $i ++)
+                @foreach($item['detail'] as $detail)
                     <tr>
                         <td>
-                            <img src="{{asset('assets/pika.jpg')}}" alt="" class="user-image">
+                            <img src="{{asset('storage/'.$detail->picture)}}" alt="" class="user-image">
                         </td>
                         <td>
-                            Figure Name
+                            {{$detail->name}}
                         </td>
                         <td>
-                            99 Pcs
+                            {{$detail->quantity}}
                         </td>
                         <td>
-                            Rp. 9999999
+                            Rp.{{$detail->price}}
                         </td>
                         <td>
-                            Rp. 9999999
+                            Rp. {{$detail->quantity*$detail->price}}
                         </td>
                     </tr>
-                @endfor
+                @endforeach
                 </tbody>
             </table>
+                @endforeach
+            {{ $items->links() }}
         </div>
     </div>
 @endsection

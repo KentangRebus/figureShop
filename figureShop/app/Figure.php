@@ -12,4 +12,8 @@ class Figure extends Model
     public function category(){
         return $this->belongsTo(category::class,'categoryId','id');
     }
+
+    public function detail(){
+        return $this->belongsToMany(CartDetail::class);
+    }
 }

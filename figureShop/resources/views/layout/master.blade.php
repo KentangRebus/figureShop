@@ -29,45 +29,43 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/Register">Register</a>
                         </li>
-                    @endif
-                    @if(!empty(auth()->user()) && auth()->user()->role === 'Member')
+                    @elseif(!empty(auth()->user()) && auth()->user()->role == 'Member')
                         <li class="nav-item">
                             <a class="nav-link" href="">Feedback</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">My Cart</a>
+                            <a class="nav-link" href={{url('Cart')}}>My Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">My Transaction</a>
+                            <a class="nav-link" href={{url('TransactionHistory')}}>My Transaction</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Profile</a>
+                            <a class="nav-link" href={{url('Profile')}}>Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Logout</a>
+                            <a class="nav-link" href={{url('doLogout')}}>Logout</a>
                         </li>
-                    @endif
-                    @if(!empty(auth()->user()) && auth()->user()->role === 'Admin')
+                    @elseif(!empty(auth()->user()) && auth()->user()->role == 'Admin')
                         <li class="nav-item">
                             <a class="nav-link" href="">Feedback</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Manage User</a>
+                            <a class="nav-link" href={{url('Admin/User')}}>Manage User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Manage Figure</a>
+                            <a class="nav-link" href={{url('Admin/Figure')}}>Manage Figure</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Manage Category</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Transaction</a>
+                            <a class="nav-link" href={{url('TransactionHistory')}}>Transaction</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Profile</a>
+                            <a class="nav-link" href={{url('Profile')}}>Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Logout</a>
+                            <a class="nav-link" href={{url('doLogout')}}>Logout</a>
                         </li>
                     @endif
                 </ul>

@@ -17,7 +17,6 @@ class CreateHeaderTransactionTable extends Migration
             $table->increments('id');
             $table->integer('userId');
             $table->date('date');
-            $table->string('status');
         });
     }
 

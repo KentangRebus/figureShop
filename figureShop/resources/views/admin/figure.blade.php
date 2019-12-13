@@ -11,7 +11,9 @@
 @section('content')
     <div class="my-5">
         <div class="w-85 m-auto">
-            <button type="button" class="btn btn-primary">Insert New Figure</button>
+            <a href='Figure/Insert'>
+                <button type="button" class="btn btn-primary">Insert New Figure</button>
+            </a>
             <hr>
             <table class="table table-striped">
                 <thead class="thead-dark">
@@ -27,58 +29,47 @@
                 </tr>
                 </thead>
                 <tbody class="">
-                @for($i = 0 ; $i < 5 ; $i++)
+                @foreach($datas as $data)
                     <tr>
                         <td>
-                            <img src="{{asset('assets/pika.jpg')}}" alt="" class="cart-image">
+                            <img src="{{asset('storage/'.$data->picture)}}" alt="" class="cart-image">
                         </td>
                         <td class="">
-                            Pikachu
+                            {{$data->name}}
                         </td>
                         <td>
-                            Category
+                            {{$data->category->name}}
                         </td>
                         <td class="w-25">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis consequuntur deserunt dolore doloremque harum illum
+                            {{$data->description}}
                         </td>
                         <td>
-                            Quantity
+                            {{$data->quantity}}
                         </td>
                         <td>
-                            Rp. 9999999
+                            Rp.{{$data->price}}
                         </td>
                         <td>
-                            <button type="button" class="btn btn-primary" onclick="">
-                                <i class="fas fa-edit"></i>
-                            </button>
+                            <a href={{url('Admin/Figure/Update/'.$data->id)}}>
+                                <button type="button" class="btn btn-primary" onclick="">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                            </a>
+
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" onclick="">
-                                <i class="fas fa-trash-alt"></i>
-                            </button>
+                            <a href={{url('Figure/doDelete/'.$data->id)}}>
+                                <button type="button" class="btn btn-danger" onclick="">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </a>
                         </td>
                     </tr>
-                @endfor
+                @endforeach
                 </tbody>
             </table>
             {{--  Pagination over here! --}}
-            <nav class="text-center">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            {{ $datas->links() }}
         </div>
     </div>
 @endsection

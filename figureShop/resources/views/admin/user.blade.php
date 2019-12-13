@@ -28,41 +28,45 @@
                 </tr>
                 </thead>
                 <tbody class="">
-                @for($i = 0 ; $i < 3 ; $i++)
+                @foreach($users as $user)
                     <tr>
                         <td>
-                            <img src="{{asset('assets/pika.jpg')}}" alt="" class="user-image">
+                            <img src="{{asset('storage/'.$user->picture)}}" alt="" class="user-image">
                         </td>
                         <td class="">
-                            User Name
+                            {{$user->name}}
                         </td>
                         <td>
-                            User Email
+                            {{$user->email}}
                         </td>
                         <td>
-                            User phone number
+                            {{$user->phone}}
                         </td>
                         <td class="w-25">
-                            User Address
+                            {{$user->address}}
                         </td>
                         <td>
-                            User Gender
+                            {{$user->gender}}
                         </td>
                         <td>
-                            User Role
+                            {{$user->role}}
                         </td>
                         <td>
-                            <button type="button" class="btn btn-primary" onclick="">
-                                <i class="fas fa-edit"></i>
-                            </button>
+                            <a href={{url('Admin/User/'.$user->id)}}>
+                                <button type="button" class="btn btn-primary" onclick="">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                            </a>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-danger" onclick="">
-                                <i class="fas fa-trash-alt"></i>
-                            </button>
+                            <a href={{url('Profile/doDelete/'.$user->id)}}>
+                                <button type="button" class="btn btn-danger" onclick="">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </a>
                         </td>
                     </tr>
-                @endfor
+                @endforeach
                 </tbody>
             </table>
 
