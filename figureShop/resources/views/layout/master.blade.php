@@ -31,7 +31,7 @@
                         </li>
                     @elseif(!empty(auth()->user()) && auth()->user()->role == 'Member')
                         <li class="nav-item">
-                            <a class="nav-link" href="">Feedback</a>
+                            <a class="nav-link" href="Feedback">Feedback</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href={{url('Cart')}}>My Cart</a>
@@ -47,7 +47,7 @@
                         </li>
                     @elseif(!empty(auth()->user()) && auth()->user()->role == 'Admin')
                         <li class="nav-item">
-                            <a class="nav-link" href="">Feedback</a>
+                            <a class="nav-link" href="/Admin/Feedback">Manage Feedback</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href={{url('Admin/User')}}>Manage User</a>
@@ -56,7 +56,7 @@
                             <a class="nav-link" href={{url('Admin/Figure')}}>Manage Figure</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Manage Category</a>
+                            <a class="nav-link" href="/Admin/Category">Manage Category</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href={{url('TransactionHistory')}}>Transaction</a>

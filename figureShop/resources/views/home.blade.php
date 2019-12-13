@@ -24,11 +24,11 @@
             @else
                 <h5>Welcome, Guest</h5>
             @endif
-            <h6>Current date: </h6>
+            <h6>Current date: <span id="datePlaceHolder"></span></h6>
             <form action="{{url('/')}}" method="get">
                 <div class="form-group d-flex">
-                    <input type="text" class="form-control w-80" id="searchInput" placeholder="Search" name="search">
-                    <button type="submit">
+                    <input type="text" class="form-control w-75" id="searchInput" placeholder="Search" name="search">
+                    <button class="btn btn-link" type="submit">
                         <i class="fas fa-search fa-lg align-self-center ml-2 search-btn" onclick="" ></i>
                     </button>
                 </div>
@@ -55,9 +55,7 @@
                 </div>
                 </form>
             @endforeach
-
-            {{--  Pagination over here! --}}
-            {{ $figures->links() }}
         </div>
+        {{ $figures->links() }}
     </div>
 @endsection

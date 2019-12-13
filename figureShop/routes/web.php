@@ -45,21 +45,18 @@ Route::post('/addToCart','CartController@store');
 Route::post('/doCheckout/{cartId}','CartController@checkout');
 
 
-Route::get('Admin/Category', function () {
-    return view('admin.category');
-});
-
+Route::get('Admin/Category', 'CategoryController@index');
 Route::get('Admin/Category/Insert', function () {
     return view('admin.categoryInsert');
 });
+Route::post('Admin/Category/doInsert', 'CategoryController@store');
+Route::post('Admin/Category/doDelete/{id}', 'CategoryController@destroy');
+Route::get('Admin/Category/Update/{id}', 'CategoryController@updatePage');
+Route::post('Admin/Category/doUpdate/{id}', 'CategoryController@update');
 
-Route::get('Admin/Category/Update ', function () {
-    return view('admin.categoryUpdate');
-});
-
-Route::get('Admin/Feedback', function () {
-    return view('admin.feedback');
-});
+Route::get('Admin/Feedback', 'FeedbackController@index');
+Route::POST('Admin/Feedback/Approve/{id}', 'FeedbackController@approve');
+Route::POST('Admin/Feedback/Reject/{id}', 'FeedbackController@reject');
 
 Route::get('TransactionHistory', 'TransactionController@index');
 Route::get('Profile', 'UserController@indexProfile');
@@ -72,4 +69,4 @@ Route::get('Profile/doDelete/{id} ', 'UserController@destroy');
 Route::get('Feedback', function () {
     return view('feedback');
 });
-
+Route::POST('Feedback/doInsert', 'FeedbackController@store');
