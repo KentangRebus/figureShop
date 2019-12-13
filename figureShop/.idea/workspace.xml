@@ -2,9 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5dfb505-4369-4069-ba55-6c82decd182a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/figureShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/figureShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/inflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/instantiator/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/lexer/" />
+    <ignored path="$PROJECT_DIR$/vendor/dragonmantank/cron-expression/" />
+    <ignored path="$PROJECT_DIR$/vendor/egulias/email-validator/" />
+    <ignored path="$PROJECT_DIR$/vendor/erusev/parsedown/" />
+    <ignored path="$PROJECT_DIR$/vendor/fideloper/proxy/" />
+    <ignored path="$PROJECT_DIR$/vendor/filp/whoops/" />
+    <ignored path="$PROJECT_DIR$/vendor/fzaninotto/faker/" />
+    <ignored path="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php/" />
+    <ignored path="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color/" />
+    <ignored path="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/framework/" />
+    <ignored path="$PROJECT_DIR$/vendor/laravel/tinker/" />
+    <ignored path="$PROJECT_DIR$/vendor/league/flysystem/" />
+    <ignored path="$PROJECT_DIR$/vendor/mockery/mockery/" />
+    <ignored path="$PROJECT_DIR$/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/vendor/myclabs/deep-copy/" />
+    <ignored path="$PROJECT_DIR$/vendor/nesbot/carbon/" />
+    <ignored path="$PROJECT_DIR$/vendor/nikic/php-parser/" />
+    <ignored path="$PROJECT_DIR$/vendor/nunomaduro/collision/" />
+    <ignored path="$PROJECT_DIR$/vendor/opis/closure/" />
+    <ignored path="$PROJECT_DIR$/vendor/paragonie/random_compat/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/manifest/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpoption/phpoption/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpspec/prophecy/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-text-template/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-timer/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-token-stream/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/phpunit/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/container/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/simple-cache/" />
+    <ignored path="$PROJECT_DIR$/vendor/psy/psysh/" />
+    <ignored path="$PROJECT_DIR$/vendor/ramsey/uuid/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/comparator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/diff/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/environment/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/exporter/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/global-state/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-enumerator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-reflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/recursion-context/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/resource-operations/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/console/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/css-selector/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/debug/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/error-handler/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/event-dispatcher/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/finder/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/http-foundation/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/http-kernel/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/mime/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-ctype/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-iconv/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php72/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php73/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/process/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/routing/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/service-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/translation/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/translation-contracts/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/var-dumper/" />
+    <ignored path="$PROJECT_DIR$/vendor/theseer/tokenizer/" />
+    <ignored path="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles/" />
+    <ignored path="$PROJECT_DIR$/vendor/vlucas/phpdotenv/" />
+    <ignored path="$PROJECT_DIR$/vendor/webmozart/assert/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,15 +103,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="82" column="61" lean-forward="true" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/feedback.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
@@ -36,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state relative-caret-position="1020">
+              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -49,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/admin/categoryinsert.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
+              <caret line="31" column="22" selection-start-line="21" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -57,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="99" column="9" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
+            <state relative-caret-position="1785">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -67,37 +142,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="63" column="79" lean-forward="true" selection-start-line="63" selection-start-column="79" selection-end-line="63" selection-end-column="79" />
+              <folding>
+                <element signature="e#28#63#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckMember.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/feedback.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
+            <state relative-caret-position="680">
               <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/category.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Cart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="289">
+              <caret line="17" column="116" selection-start-line="17" selection-start-column="116" selection-end-line="17" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -105,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="578">
               <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
             </state>
           </provider>
@@ -132,6 +219,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" />
         <option value="$PROJECT_DIR$/resources/views/feedback.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckMember.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
       </list>
     </option>
   </component>
@@ -221,6 +312,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
     </include_path>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="610" />
+    <option name="y" value="175" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
+  </component>
   <component name="ProjectId" id="1UpT0KPqnjasq30SQH8e1bnHCj9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,6 +325,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,24 +354,10 @@
               <item name="figureShop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="figureShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="figureShop" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="figureShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="figureShop" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -346,6 +430,7 @@
       <workItem from="1576052317521" duration="2940000" />
       <workItem from="1576063524067" duration="775000" />
       <workItem from="1576124257845" duration="2303000" />
+      <workItem from="1576214847456" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php">
       <created>1576152501488</created>
@@ -358,13 +443,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9613000" />
+    <option name="totallyTimeSpent" value="13004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22550336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17114094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -510,13 +595,6 @@
     <entry file="file://$PROJECT_DIR$/public/web.config">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -601,27 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/feedback.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="82" column="61" lean-forward="true" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -629,20 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="99" column="9" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/categoryinsert.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="1241">
+          <caret line="82" column="61" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -655,8 +702,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state relative-caret-position="1020">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/categoryinsert.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="22" selection-start-line="21" selection-start-column="16" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/feedback.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="116" selection-start-line="17" selection-start-column="116" selection-end-line="17" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckMember.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="63" column="79" lean-forward="true" selection-start-line="63" selection-start-column="79" selection-end-line="63" selection-end-column="79" />
+          <folding>
+            <element signature="e#28#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
