@@ -2,26 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfacbe48-5016-46d8-b217-65a814aa63bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/profileupdate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/AuthController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/figureShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/figureShop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CartDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CartDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Figure.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Figure.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135834_create_feedback_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135834_create_feedback_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_135949_create_header_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_135949_create_header_transaction_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_140039_create_detail_transaction_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_140039_create_detail_transaction_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/figure.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/figure.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/figureinsert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/figureinsert.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/figureupdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/figureupdate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/userupdate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/userupdate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckMember.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckMember.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_134632_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_134632_create_user_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/transactionhistory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transactionhistory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +195,8 @@
       <workItem from="1576063524067" duration="775000" />
       <workItem from="1576124257845" duration="2303000" />
       <workItem from="1576159206561" duration="18517000" />
-      <workItem from="1576217726636" duration="6898000" />
+      <workItem from="1576217726636" duration="12017000" />
+      <workItem from="1576229982056" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php">
       <created>1576152501488</created>
@@ -201,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576152660204</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge https://github.com/KentangRebus/figureShop&#10;Third Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php">
+      <created>1576224702932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576224702932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,45 +241,46 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge https://github.com/KentangRebus/figureShop&#10;&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
     <MESSAGE value="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/KentangRebus/figureShop&#10;Second Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
+    <MESSAGE value="Merge https://github.com/KentangRebus/figureShop&#10;Third Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/KentangRebus/figureShop&#10;Third Commit by RM&#10;# Conflicts:&#10;#&#9;figureShop/.idea/workspace.xml&#10;#&#9;figureShop/routes/web.php" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576221889205">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576228248316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576221889205" />
-    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1576152659586">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1576228248316" />
+    <state x="303" y="0" key="CommitChangelistDialog2" timestamp="1576224702120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576152659586" />
-    <state x="129" y="54" key="MergeDialog" timestamp="1576152631344">
+    <state x="303" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576224702120" />
+    <state x="129" y="54" key="MergeDialog" timestamp="1576224898726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="54" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152631344" />
-    <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1576152637292">
+    <state x="129" y="54" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576224898726" />
+    <state x="395" y="79" key="MultipleFileMergeDialog" timestamp="1576224902795">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576152637292" />
+    <state x="395" y="79" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1576224902794" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1576152665364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1576152665364" />
-    <state x="384" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1576217744639">
+    <state x="540" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1576398815115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="384" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576229982206" />
+    <state x="540" y="267" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1576398815115" />
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog" timestamp="1576224713800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576217744639" />
-    <state x="540" y="267" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1576063525766" />
-    <state x="390" y="155" key="git4idea.merge.GitPullDialog" timestamp="1576224665613">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1576224665613" />
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1576224713800" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1576162769857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1576162769857" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1576221259143">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1576230003946">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1576221259143" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1576230003946" />
   </component>
 </project>

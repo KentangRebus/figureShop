@@ -50,12 +50,16 @@
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">{{$figure->category->name}}</small>
+                        @if(auth()->user() != null)
                         <button type="submit" class="btn btn-success btn-block mt-3">Add to Cart</button>
+                            @endif
                     </div>
                 </div>
                 </form>
             @endforeach
         </div>
+    </div>
+    <div class="w-25 m-auto">
         {{ $figures->links() }}
     </div>
 @endsection

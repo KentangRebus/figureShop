@@ -21,7 +21,7 @@
                     <input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
                 </div>
                 <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="rememberCheckBox">
+                    <input type="checkbox" class="form-check-input" id="rememberCheckBox" name="remember">
                     <label class="form-check-label">Remember me</label>
                 </div>
                 @if ($errors->any())

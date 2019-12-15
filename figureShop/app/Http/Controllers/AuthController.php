@@ -39,6 +39,7 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
+        //membuat validator untuk melakukan validasi yang diminta soal
         $validator = Validator::make($request->all(), [
             'FullName' => 'bail|required|min:5',
             'Email' => 'bail|required|email|unique:users,email',
@@ -50,12 +51,16 @@ class AuthController extends Controller
             'profile_picture' => 'bail|required|mimes:jpeg,jpg,png',
             'Agreement' => 'bail|required'
         ]);
+        // kita cek validator, jika ada yang gagal, maka balik ke register dengan pesan error
         if(!$validator->fails()){
+
+            //melakukan insert ke database table user
             $image = $request->file('profile_picture');
             $imagename = time().'.'.$image->getClientOriginalName();
             $dest = 'public';
             $image->storeAs($dest,$imagename);
 
+            //buat objek user untuk di insert
             $user = new User();
             $user->name = $request->FullName;
             $user->email = $request->Email;
@@ -66,6 +71,7 @@ class AuthController extends Controller
             $user->picture = $imagename;
             $user->role = 'Member';
             $user->save();
+            //kembali dengan pesan sukses
             return redirect('Login')->with('alert-success','Register Success');
         }
         else{
@@ -75,8 +81,13 @@ class AuthController extends Controller
     }
 
     public function logout(){
+        //melakukan logout dan menghapus segala session dan cookie
+        $user = Auth::user();
+        $user->remember_token="";
+        $user->save();
         Auth::logout();
         Session::flush();
+        session()->regenerate();
         return redirect('Login')->with('alert-success','Logout Success');
     }
 
@@ -84,9 +95,19 @@ class AuthController extends Controller
 
         $email = $request->email;
         $password = $request->password;
-        if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            return redirect()->intended('/');
+        if($request->remember == null){
+            //login tanpa remember me
+            if (Auth::attempt(['email' => $email, 'password' => $password])) {
+                return redirect()->intended('/');
+            }
         }
+        else{
+            //melakukan remember me dengan auth attempt dan login
+            if (Auth::attempt(['email' => $email, 'password' => $password],true)) {
+                return redirect()->intended('/');
+            }
+        }
+
         return back()->withErrors(['message'=>'Email or Password is Incorrect']);
     }
 

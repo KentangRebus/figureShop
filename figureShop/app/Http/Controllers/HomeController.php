@@ -31,13 +31,13 @@ class HomeController extends Controller
         $figures = Figure::with('category')
             ->where('name', 'LIKE', '%' . $query . '%')
             ->paginate(2);
-//        dd($figures);
-//        if($figures->total==0){
-//            $category = category::where('name','LIKE','%'.$query.'%')->get();
-//            $figures = Figure::with('category')
-//                ->where('categoryId','=',$category[0]->id)
-//                ->paginate(2);
-//        }
+//        dd(count($figures));
+        if(count($figures)==0){
+            $category = category::where('name','LIKE','%'.$query.'%')->get();
+            $figures = Figure::with('category')
+                ->where('categoryId','=',$category[0]->id)
+                ->paginate(2);
+        }
         $figures->appends($request->only('search'));
         return view('home',compact('figures','user'));
     }
